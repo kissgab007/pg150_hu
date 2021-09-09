@@ -1,89 +1,60 @@
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.navbar-header {
-    float: none;
-}
-
-.modal-fullscreen-menu .close {
-    color: white;
-    opacity: 1;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    font-size: 5vh;
-}
-
-.modal-fullscreen-menu .modal-dialog {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 768px;
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-
-.modal-fullscreen-menu .modal-content {
-    background-color: transparent;
-    box-shadow: none;
-    border: none;
-}
-
-.modal-fullscreen-menu .list-group {
+.nav-link{
     text-align: center;
-    margin: 0 auto;
-    width: 100%;
+    width: 100px;
 }
 
-.modal-fullscreen-menu .list-group a {
-    font-size: 200%;
-    font-weight: 200;
-    letter-spacing: 0.05em;
-    border: none;
-    transition: all 0.25s ease;
-    background-color: transparent;
-    color: white;
-    padding: 7.5vh 0;
-    height: 5vh;
-    font-size: 5vh;
-    line-height: 0;
+.menu1{
+    background-color: darkgoldenrod;
+    border-bottom:5px solid blue;
 }
 
-.modal-fullscreen-menu .list-group a:before {
+.color1{
+    position:relative;
+    z-index: 1;
+}
+
+.color1::after{
     content: "";
-    position: absolute;
-    top: 0;
+    position:absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background: blue;
     z-index: -1;
-    opacity: 0;
-    transform: scale3d(0.7, 1, 1);
-    transition: transform 0.4s, opacity 0.4s;
+    transition: transform 0.3s;
 }
 
-.modal-fullscreen-menu .list-group a:hover {
-    color: black;
+.color1:hover::after{
+    transform: scaleY(1);
 }
 
-.modal-fullscreen-menu .list-group a:hover:before {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
+.menu2{
+    background-color:darkolivegreen;
+    border-bottom:5px solid darksalmon;
 }
 
-.modal-backdrop.in {
-    opacity: 1;
+.color2{
+    position:relative;
+    z-index: 1;
 }
 
-.jumbotron {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    height: 100vh;
-    color: white;
-    background-color: #333;
+.color2::after{
+    content: "";
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    background:darksalmon;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+.color2:hover::after{
+    transform: scaleY(1);
 }
