@@ -5,8 +5,22 @@
     }
 }
 
+@media screen and (max-width: 1400px) {
+    .nav-link{
+        line-height: 45px;
+    }
+}
+
 .logo img {
     height: 60px;
+}
+
+.hamburger{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: rgba(0, 0, 0, 0.60);
+    opacity: 0.5;
 }
 
 .menu1 {
