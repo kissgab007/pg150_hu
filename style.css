@@ -1,12 +1,25 @@
 @media screen and (min-width: 1400px) {
     .nav-link {
-        width: 190px;
+        width: 198px;
         height: 60px;
     }
 }
 
-@media screen and (max-width: 1400px) {
-    .nav-link{
+@media screen and (max-width: 1200px) {
+    .nav-link {
+        line-height: 45px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .nav-link {
+        width: 168px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .menu2 {
         line-height: 45px;
     }
 }
@@ -15,7 +28,7 @@
     height: 60px;
 }
 
-.hamburger{
+.hamburger {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -57,10 +70,15 @@
     color: #fcf5a8;
 }
 
+.active1 {
+    font-weight: bold;
+    background-color: #311d1f;
+    color: #fcf5a8;
+}
+
 .menu2 {
     background-color: #bbd5ed;
     border-bottom: 5px solid #1f3864;
-    line-height: 45px;
 }
 
 .color2 {
@@ -88,6 +106,12 @@
 }
 
 .color2:hover {
+    color: #bbd5ed;
+}
+
+.active2 {
+    font-weight: bold;
+    background-color: #1f3864;
     color: #bbd5ed;
 }
 
@@ -125,6 +149,12 @@
     color: #ccffcc;
 }
 
+.active3 {
+    font-weight: bold;
+    background-color: #385723;
+    color: #ccffcc;
+}
+
 .menu4 {
     background-color: #dcddde;
     border-bottom: 5px solid #636466;
@@ -155,6 +185,12 @@
 }
 
 .color4:hover {
+    color: #dcddde;
+}
+
+.active4 {
+    font-weight: bold;
+    background-color: #636466;
     color: #dcddde;
 }
 
@@ -191,6 +227,12 @@
     color: #f3dbaf;
 }
 
+.active5 {
+    font-weight: bold;
+    background-color: #6d4e27;
+    color: #f3dbaf;
+}
+
 .menu6 {
     background-color: #E2d0d9;
     border-bottom: 5px solid #8a0054;
@@ -222,5 +264,15 @@
 }
 
 .color6:hover {
-    color: #E2d0d9;
+    color: #e2d0d9;
+}
+
+.active6 {
+    font-weight: bold;
+    background-color: #8a0054;
+    color: #e3d0d9;
+}
+
+#color1 {
+    background-color: #1f3864;
 }
