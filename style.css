@@ -353,10 +353,11 @@ p {
 }
 
 #footer {
-    height: 100px;
+    /*height: 100px;*/
 }
 
 #footer a {
+    display: block;
     background: linear-gradient( to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
     background-position: 0 100%;
     background-repeat: repeat-x;
