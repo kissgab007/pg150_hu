@@ -365,6 +365,7 @@ p {
     color: #000;
     text-decoration: none;
     transition: background-size .2s;
+    text-indent: 2em;
 }
 
 #footer a:hover {
