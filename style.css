@@ -1,23 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --mainColor: #9de3e9;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
+p {
+    text-align: justify;
+    text-indent: 2em;
+}
+
 @media screen and (min-width: 1400px) {
-    .nav-link {
+    .color1,
+    .color2,
+    .color3,
+    .color4,
+    .color5,
+    .color6 {
         width: 198px;
         height: 60px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .nav-link {
+    .color1,
+    .color2,
+    .color3,
+    .color4,
+    .color5,
+    .color6 {
         line-height: 45px;
     }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
-    .nav-link {
+    .color1,
+    .color2,
+    .color3,
+    .color4,
+    .color5,
+    .color6 {
         width: 168px;
         height: 60px;
     }
@@ -284,6 +308,18 @@ body {
     z-index: 1;
 }
 
+@media screen and (min-width: 1400px) {
+    .color {
+        width: 191px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .color {
+        width: 161px;
+    }
+}
+
 .color::after {
     content: "";
     position: absolute;
@@ -312,6 +348,24 @@ body {
     color: #fcf5a8;
 }
 
+.menu li {
+    margin-bottom: 1px;
+}
+
 #footer {
     height: 100px;
+}
+
+#footer a {
+    background: linear-gradient( to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    color: #000;
+    text-decoration: none;
+    transition: background-size .2s;
+}
+
+#footer a:hover {
+    background-size: 4px 50px;
 }
