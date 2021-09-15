@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 :root {
-    --mainColor: #9de3e9;
+    --mainColor: #cefbff;
 }
 
 body {
@@ -370,4 +370,10 @@ p {
 
 #footer a:hover {
     background-size: 4px 50px;
+}
+
+.icon {
+    width: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
